@@ -1,0 +1,1253 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Técnicas Modernas de Joalheria Artesanal - Aprenda do Zero</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;1,400;1,600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            line-height: 1.6;
+            color: #1c1e2e;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #9af0ff 0%, #7de8ff 100%);
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .hero h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 30px;
+            color: #009bc1;
+        }
+
+        .hero-image {
+            max-width: 500px;
+            width: 100%;
+            height: auto;
+            margin: 30px auto;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        }
+
+        .hero-subtitle {
+            font-size: 1.1rem;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        /* Problem Section */
+        .problem-section {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .problem-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            text-align: center;
+        }
+
+        .problem-item {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        /* Solution Section */
+        .solution-section {
+            background: #9af0ff;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .solution-content {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .solution-text {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        .solution-image {
+            max-width: 300px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        /* Product Section */
+        .product-section {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .product-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .product-header h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #009bc1;
+            text-shadow: 2px 2px 5px #6be9ff;
+            margin-bottom: 20px;
+        }
+
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+            margin-bottom: 40px;
+        }
+
+        .techniques-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .technique-item {
+            text-align: center;
+        }
+
+        .technique-item h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .technique-image {
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 20px;
+            margin: 0 auto 15px;
+            display: block;
+        }
+
+        .benefits-list {
+            font-size: 1.1rem;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        /* Benefits Section */
+        .benefits-section {
+            background: #9af0ff;
+            padding: 60px 0;
+        }
+
+        .benefits-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .benefits-header h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+        }
+
+        .benefits-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .benefits-list-detailed {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .benefits-image {
+            max-width: 280px;
+            width: 100%;
+            margin: 0 auto;
+            border-radius: 20px;
+        }
+
+        /* Bonuses Section */
+        .bonuses-section {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .bonuses-header h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .bonuses-header h3 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #009bc1;
+            margin-bottom: 30px;
+        }
+
+        .bonus-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .bonus-item {
+            background: #9af0ff;
+            padding: 30px 20px;
+            border-radius: 15px;
+            border: 2px dashed #009bc1;
+        }
+
+        .bonus-item h4 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 15px;
+        }
+
+        .bonus-item p {
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+
+        .bonus-image {
+            max-width: 200px;
+            width: 100%;
+            margin: 20px auto;
+        }
+
+        .bonus-price {
+            font-size: 1.1rem;
+        }
+
+        .price-strike {
+            color: #f50000;
+            text-decoration: line-through;
+            font-weight: bold;
+        }
+
+        .price-free {
+            color: #14ef00;
+            font-weight: bold;
+        }
+
+        /* Offer Section */
+        .offer-section {
+            background: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .offer-header h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+            margin-bottom: 30px;
+        }
+
+        .offer-visual {
+            max-width: 400px;
+            width: 100%;
+            margin: 30px auto;
+        }
+
+        .pricing {
+            font-size: 1.5rem;
+            margin: 30px 0;
+        }
+
+        .original-price {
+            color: #ff0000;
+            font-weight: bold;
+        }
+
+        .special-price {
+            color: #03fd2f;
+            font-weight: bold;
+            font-size: 2rem;
+            margin: 20px 0;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: #ff4b01;
+            color: white;
+            padding: 20px 40px;
+            font-size: 1.3rem;
+            font-weight: 600;
+            text-decoration: none;
+            border-radius: 10px;
+            margin: 30px 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+            text-transform: uppercase;
+        }
+
+        .cta-button:hover {
+            background: #e63e00;
+            transform: translateY(-2px);
+            box-shadow:0 8px 25px rgba(0,0,0,0.4);
+        }
+
+        .urgency {
+            background: #ffe6e6;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #ff0000;
+        }
+
+        .timer {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #d0021b;
+            margin: 20px 0;
+        }
+
+        .guarantee-section {
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+        }
+
+        .guarantee-badge {
+            max-width: 200px;
+            width: 100%;
+            margin: 0 auto 30px;
+        }
+
+        .guarantee-text {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .guarantee-button {
+            background: #cf9d01;
+            color: rgba(0,0,0,0.9);
+        }
+
+        .guarantee-button:hover {
+            background: #b8890a;
+        }
+
+        /* Testimonials */
+        .testimonials-section {
+            background: white;
+            padding: 60px 0;
+        }
+
+        .testimonials-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .testimonials-header h2 {
+            font-size: 2rem;
+            font-weight: 600;
+            font-style: italic;
+            color: #009bc1;
+            text-shadow: 2px 2px 5px #6be9ff;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .testimonial-item {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 15px;
+            border-left: 4px solid #009bc1;
+        }
+
+        .testimonial-author {
+            font-weight: 600;
+            color: #009bc1;
+            margin-bottom: 10px;
+        }
+
+        /* FAQ Section */
+        .faq-section {
+            background: #9af0ff;
+            padding: 60px 0;
+        }
+
+        .faq-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .faq-item {
+            background: #f1f4f8;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            background: #e8ecf0;
+            cursor: pointer;
+            font-weight: 600;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-answer {
+            padding: 20px;
+            display: none;
+        }
+
+        .faq-answer.active {
+            display: block;
+        }
+
+        /* Footer */
+        .footer {
+            background: rgba(0,0,0,0.9);
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+            
+            .hero h2 {
+                font-size: 1.4rem;
+            }
+
+            .product-grid,
+            .benefits-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .techniques-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .technique-image {
+                width: 150px;
+                height: 150px;
+            }
+
+            .cta-button {
+                width: 100%;
+                padding: 15px 20px;
+                font-size: 1.1rem;
+            }
+
+            .container {
+                padding: 0 15px;
+            }
+        }
+
+        /* Animation */
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        .cta-button {
+            animation: pulse 2s infinite;
+        }
+
+        .cta-button:hover {
+            animation: none;
+        }
+
+        /* Progress bar styling */
+        .progress-container {
+            background: #e0e0e0;
+            border-radius: 10px;
+            overflow: hidden;
+            margin: 20px 0;
+        }
+
+        .progress-bar {
+            background: linear-gradient(90deg, #ff4b01, #ff6b01);
+            height: 30px;
+            width: 92%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Descubre Cómo Crear Joyas Artesanales con <strong>Miyuki o Mostacillas</strong> Aunque Nunca Antes Lo Hayas Intentado</h1>
+            <h2>Domina las <span style="color: #009bc1;">Técnicas Más Populares</span> desde Casa, Paso a Paso y con Resultados Reales en Días, No Años</h2>
+            
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688a54c17fece_ChatGPTImage30jul202512_21_30.png" alt="Técnicas Modernas de Joyería Artesanal" class="hero-image">
+            
+            <p class="hero-subtitle">Sin conocimientos previos. Sin confusión. Con clases prácticas y resultados que te llenarán de orgullo.</p>
+        </div>
+    </section>
+
+    <!-- Problem Section -->
+    <section class="problem-section">
+        <div class="container">
+            <div class="problem-grid">
+                <div class="problem-item">
+                    <p>¿Intentaste aprender joyería artesanal por tu cuenta, pero <strong>terminaste más confundida que al empezar</strong>?</p>
+                </div>
+                <div class="problem-item">
+                    <p>¿Admiras diseños con mostacillas y te encantaría <strong>crearlos tú misma</strong>, pero no sabes ni por dónde comenzar?</p>
+                </div>
+                <div class="problem-item">
+                    <p>¿Te frena el miedo a no ser <strong>"lo suficientemente buena"</strong>?</p>
+                </div>
+                <div class="problem-item">
+                    <p>¿Sientes que pierdes tiempo entre <strong>tutoriales poco claros</strong> y materiales que no sabes usar?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solution Section -->
+    <section class="solution-section">
+        <div class="container">
+            <div class="solution-content">
+                <div class="solution-text">
+                    <h3 style="font-size: 1.8rem; margin-bottom: 20px; text-decoration: underline;"><strong>Aprender sola puede ser agotador.</strong></h3>
+                    <p>Empiezas con entusiasmo, pero los resultados no te convencen. Dudas de ti, te frustras y terminas abandonando ese sueño de crear joyas que hablen de ti.</p>
+                    <p>Y lo peor... te comparas con otras creadoras y piensas: <strong>"yo no nací para esto"</strong>.</p>
+                    <p>Pero… <strong>¿Y si el problema no eres tú, sino el método?</strong></p>
+                </div>
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68855aec6f9fd_Diseñosintítulo1.png" alt="Diseño sin título" class="solution-image">
+                <div style="font-size: 1.3rem; font-weight: 600; margin-top: 30px;">
+                    <strong>Esta guía no es solo un libro digital, es la solución definitiva para aprender desde casa.</strong>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Section -->
+    <section class="product-section">
+        <div class="container">
+            <div class="product-header">
+                <h2>Técnicas Modernas de Joyería Artesanal</h2>
+                <p style="font-size: 1.2rem;">Tu guía definitiva para aprender, practicar y dominar las técnicas más profesionales de joyería en Miyuki o Mostacillas con confianza y desde cero.</p>
+            </div>
+
+            <div class="product-grid">
+                <div>
+                    <p style="font-size: 1.3rem; margin-bottom: 30px;"><strong>Aprende las 4 técnicas más populares de la Joyería Artesanal Moderna:</strong></p>
+                    
+                    <div class="techniques-grid">
+                        <div class="technique-item">
+                            <h3>🔸 Peyote par</h3>
+                            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68891be75d968_OFERTA3.png" alt="Peyote par" class="technique-image">
+                        </div>
+                        <div class="technique-item">
+                            <h3>🔸 Peyote Impar</h3>
+                            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68891c437f299_OFERTA2.png" alt="Peyote Impar" class="technique-image">
+                        </div>
+                        <div class="technique-item">
+                            <h3>🔸 Puntada Cuadrada</h3>
+                            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68891cc8ba71f_OFERTA5.png" alt="Puntada Cuadrada" class="technique-image">
+                        </div>
+                        <div class="technique-item">
+                            <h3>🔸 Puntada Ladrillo</h3>
+                            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68891cf7b59a6_OFERTA4.png" alt="Puntada Ladrillo" class="technique-image">
+                        </div>
+                    </div>
+                </div>
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688818d425e80_MockupLibro.png" alt="Mockup del Libro" style="max-width: 350px; width: 100%;">
+            </div>
+
+            <div class="benefits-list">
+                <p>🎥 Incluye <strong>VIDEOS</strong> paso a paso para que veas exactamente cómo se hace cada técnica.</p><br>
+                <p>✔️ Ideal para principiantes que quieren resultados reales sin frustración</p><br>
+                <p>✔️ Para mujeres que sueñan con crear, vender o simplemente expresarse a través del arte con mostacillas</p><br>
+                <p>✔️ Con una metodología clara, simple y efectiva que ha transformado la experiencia de cientos de personas</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="benefits-section">
+        <div class="container">
+            <div class="benefits-header">
+                <h2>¿QUE VAS A LOGRAR CON <span style="color: #009bc1;">NUESTRO EBOOK</span>?</h2>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefits-list-detailed">
+                    <p>✔️ Aprenderás con claridad, a tu ritmo, sin frustración.</p><br>
+                    <p>✔️ Vas a dominar las técnicas básicas más utilizadas en el mundo del Miyuki.</p><br>
+                    <p>✔️ Descubrirás cómo crear tus propios patrones desde cero.</p><br>
+                    <p>✔️ Tendrás acceso a recursos que te ahorran tiempo, errores y dinero.</p><br>
+                    <p>✔️ Empezarás a crear joyas dignas de admiración… ¡y de venta!</p>
+                </div>
+                <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688922e43d0dd_OFERTA7.png" alt="Ejemplo de joyería" class="benefits-image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Bonuses Section -->
+    <section class="bonuses-section">
+        <div class="container">
+            <div class="bonuses-header">
+                <h2>Además, HOY te llevas estos BONOS…</h2>
+                <h3>¡TOTALMENTE GRATIS!</h3>
+                <p style="font-size: 1.1rem;">Porque no quiero darte solo un Ebook, quiero darte todo un sistema de aprendizaje completo. Llévate <span style="color: #ff0202;"><strong>GRATIS</strong></span> estos <strong>6 bonos</strong> valorados en más de $100:</p>
+            </div>
+
+            <div class="bonus-grid">
+                <div class="bonus-item">
+                    <h4>Bono N° 1</h4>
+                    <p>Mas de 100 patrones de regalo de accesorios para que las elabores fácilmente en casa.</p>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68881da3188d2_MockupBono1.png" alt="Bono 1" class="bonus-image">
+                    <p class="bonus-price">Valor: <span class="price-strike">20 Dólares</span> Solo por HOY: <span class="price-free">GRATIS</span></p>
+                </div>
+
+                <div class="bonus-item">
+                    <h4>Bono N° 2</h4>
+                    <p>Matrices para diseñar tus accesorios personalizados.</p>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68882002f384e_MockupBono2.png" alt="Bono 2" class="bonus-image">
+                    <p class="bonus-price">Valor: <span class="price-strike">15 Dólares</span> Solo por HOY: <span class="price-free">GRATIS</span></p>
+                </div>
+
+                <div class="bonus-item">
+                    <h4>Bono N° 3</h4>
+                    <p>No te preocupes por donde comprar los materiales, recibirás nuestra lista de proveedores de cada país. Los mejores lugares para que adquieras los materiales a un menor precio.</p>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68882044335db_MockupBono3.png" alt="Bono 3" class="bonus-image">
+                    <p class="bonus-price">Valor: <span class="price-strike">18 Dólares</span> Solo por HOY: <span class="price-free">GRATIS</span></p>
+                </div>
+
+                <div class="bonus-item">
+                    <h4>Bono N° 4</h4>
+                    <p>Conoce los programas de diseño más conocidos para que personalices cualquier tipo de diseño de manera fácil y práctica.</p>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/6888206558a8f_MockupBono4.png" alt="Bono 4" class="bonus-image">
+                    <p class="bonus-price">Valor: <span class="price-strike">17 Dólares</span> Solo por HOY: <span class="price-free">GRATIS</span></p>
+                </div>
+
+                <div class="bonus-item">
+                    <h4>Bono N° 5</h4>
+                    <p>Plantilla para que calcules fácilmente los costos y precio de venta de tus productos.</p>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68882087571d5_MockupBono5.png" alt="Bono 5" class="bonus-image">
+                    <p class="bonus-price">Valor: <span class="price-strike">25 Dólares</span> Solo por HOY: <span class="price-free">GRATIS</span></p>
+                </div>
+
+                <div class="bonus-item">
+                    <h4>📜 Y además recibirás:</h4>
+                    <p>Certificado de finalización personalizado con tu nombre 8 días después de adquirir el programa.</p>
+                    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/6885553c22e00_Certificado.png" alt="Certificado" class="bonus-image">
+                    <p class="bonus-price">Valor: <span class="price-strike">22 Dólares</span> Solo por HOY: <span class="price-free">GRATIS</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Offer Section -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer-header">
+                <h2>¡Oferta Disponible Hasta <span style="color: #009bc1;">HOY</span>!</h2>
+            </div>
+
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68892801e7bb6_Diseñosintítulo2.png" alt="Oferta especial" class="offer-visual">
+
+            <div class="pricing">
+                <p>El valor total del Libro digital + Videos es de <span class="original-price">$49 USD</span></p>
+                <p>Pero <strong>solo por Hoy</strong>, puedes acceder a todo el contenido ahorrándote más del 70%, es decir, realizas solo un único pago de:</p>
+                <div class="special-price">$6,97 USD</div>
+            </div>
+
+            <a href="https://pay.hotmart.com/Y96597496J?checkoutMode=10" class="cta-button">
+                SI QUIERO EL LIBRO CON TODOS LOS BONOS
+            </a>
+
+            <div class="urgency">
+                <p><strong>Toma acción ahora antes de que vuelva a su precio original.</strong></p>
+                <div class="timer">
+                    <span style="color: #ff0000;">La Oferta Finaliza En:</span><br>
+                    <span id="countdown">23:59:45</span>
+                </div>
+            </div>
+
+            <p>El precio de referencia se encuentra en dólares, pero el pago es realizado en la <strong>moneda de tu país</strong>.</p>
+            <p>Da clic en el siguiente botón para conocer el valor en la moneda de tu país y reservar tu libro 👇</p>
+
+            <a href="https://pay.hotmart.com/Y96597496J?checkoutMode=10" class="cta-button" style="margin-top: 20px;">
+                Descargar con 70% de descuento
+            </a>
+
+            <p style="font-size: 0.9rem; margin-top: 15px;">92 Libros vendidos. Solo quedan 8 copias en promoción</p>
+            
+            <div class="progress-container">
+                <div class="progress-bar">92%</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How to Access Section -->
+    <section class="solution-section">
+        <div class="container">
+            <h2 style="font-size: 2rem; margin-bottom: 30px; color: rgba(0,0,0,0.9);">¿Cómo acceder a la promoción?</h2>
+            <div style="text-align: left; max-width: 800px; margin: 0 auto;">
+                <p><strong>✅ Paso 1: Realiza tu pago seguro</strong><br>
+                Aceptamos tarjetas de crédito, débito y otros métodos confiables. Todo el proceso está protegido para garantizar tu seguridad.</p><br>
+
+                <p><strong>✅ Paso 2: Revisa tu correo electrónico</strong><br>
+                Una vez completado el pago, recibirás automáticamente un email con el <strong>libro digital</strong> y <strong>todos los bonos incluidos</strong>.</p><br>
+
+                <p>📌 <em>Revisa también tu bandeja de "Promociones" o "Spam", en caso de que llegue allí.</em></p><br>
+
+                <p><strong>✅ Paso 3: Descarga el contenido en tu celular, tablet o computadora</strong><br>
+                Podrás guardar el material y consultarlo cuando desees, desde cualquier dispositivo.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+<section class="testimonials-section" style="padding:40px 0;">
+  <div class="container" style="max-width:1200px; margin:0 auto;">
+    <div class="testimonials-header" style="text-align:center; margin-bottom:30px;">
+      <h2>¿Qué dicen de nuestro libro digital?</h2>
+    </div>
+
+    <div class="testimonials-grid" style="display:grid; grid-template-columns:repeat(auto-fit, minmax(280px, 1fr)); gap:20px;">
+      
+      <div class="testimonial-item" style="text-align:center;">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688a5994bb307_CopiadeCopiadeTestTortas12.png" 
+             alt="Testimonio 1" style="width:100%; max-width:500px; border-radius:10px;">
+      </div>
+      
+      <div class="testimonial-item" style="text-align:center;">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68895aabb4d4c_CopiadeCopiadeTestTortas1.png" 
+             alt="Testimonio 2" style="width:100%; max-width:500px; border-radius:10px;">
+      </div>
+      
+      <div class="testimonial-item" style="text-align:center;">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688a58baf4006_CopiadeCopiadeTestimonioBrow2.png" 
+             alt="Testimonio 3" style="width:100%; max-width:500px; border-radius:10px;">
+      </div>
+      
+      <div class="testimonial-item" style="text-align:center;">
+        <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688a5984ee339_CopiadeCopiadeTestTortas11.png" 
+             alt="Testimonio 4" style="width:100%; max-width:500px; border-radius:10px;">
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+    <!-- About Author Section -->
+<section class="benefits-section" style="padding:40px 0;">
+  <div class="container" style="max-width:1200px; margin:0 auto;">
+    <div class="benefits-header" style="text-align:center; margin-bottom:30px;">
+      <h2>¿Quién es la creadora del libro?</h2>
+    </div>
+
+    <div class="benefits-grid" style="display:flex; flex-wrap:wrap; align-items:center; gap:30px;">
+      
+      <!-- Imagem da autora -->
+      <div class="author-image" style="flex:1 1 300px; text-align:center;">
+        <img src="https://i.postimg.cc/cJqTZRwD/Chat-GPT-Image-17-de-set-de-2025-20-30-49.png" 
+             alt="María Alejandra - Diseñadora artesanal" 
+             style="max-width:100%; height:auto; border-radius:10px;">
+        <h3 style="margin-top:15px; font-size:1.3rem; font-weight:600;">María Alejandra</h3>
+      </div>
+
+      <!-- Texto da autora -->
+      <div class="author-text" style="flex:2 1 500px; text-align:left;">
+        <p>María Alejandra es diseñadora artesanal con más de 8 años de experiencia en la creación de accesorios hechos con mostacillas y Miyuki.</p><br>
+        <p>Desde sus primeros pasos, combinó su pasión por el arte manual con la enseñanza, compartiendo sus conocimientos con cientos de mujeres que deseaban aprender desde cero y desarrollar su creatividad.</p><br>
+        <p>A lo largo de los años, María ha perfeccionado las técnicas más usadas en el mundo de la joyería con mostacillas, adaptándolas a un método <strong>práctico, visual y fácil de seguir</strong>, incluso para quienes no tienen experiencia previa.</p><br>
+        <p>Su propósito con este libro digital es darte un camino claro, sin complicaciones, para que puedas aprender paso a paso, practicar con seguridad, y comenzar a crear piezas únicas que reflejen tu estilo y talento.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CSS responsivo -->
+<style>
+  @media (max-width: 768px) {
+    .benefits-grid {
+      flex-direction: column;
+      text-align: center;
+    }
+    .author-text {
+      text-align: left;
+    }
+  }
+</style>
+
+
+    <!-- Summary Section -->
+    <section class="offer-section">
+        <div class="container">
+            <div class="offer-header">
+                <h2 style="color: #009bc1; text-shadow: 2px 2px 5px #6be9ff;">Un resumen de todo lo que vas a recibir HOY</h2>
+            </div>
+
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688a6bbbaed3a_Diseñosintítulo3.png" alt="Resumen de la oferta" style="max-width: 600px; width: 100%; margin: 30px auto;">
+
+            <div style="background: white; padding: 30px; border-radius: 15px; margin: 30px auto; max-width: 600px; text-align: left;">
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>LIBRO TÉCNICAS MODERNAS DE JOYERÍA ARTESANAL ($49)</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>Patrones e imágenes de accesorios ($20)</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>Matrices para diseñar tus accesorios ($15)</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>Listado Exclusivo de Proveedores por país ($18)</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>Guía de programas para diseñar ($20)</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>Plantilla Calculo de precio de venta ($17)</strong></span>
+                </div>
+                <div style="display: flex; align-items: center; margin-bottom: 15px;">
+                    <span style="color: #009bc1; font-size: 1.2rem; margin-right: 10px;">✓</span>
+                    <span><strong>Certificado de Finalización ($22)</strong></span>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin: 30px 0;">
+                <p style="font-size: 1.5rem; margin-bottom: 10px;"><strong>Valor total</strong> <span style="color: #ff0000; text-decoration: line-through;"><strong>$161 Dólares</strong></span></p>
+                <p style="font-size: 1.5rem; margin-bottom: 20px;"><strong>Valor especial hasta HOY</strong></p>
+                <div style="font-size: 2.5rem; color: #02fd25; font-weight: bold; margin: 20px 0;">$6,97</div>
+            </div>
+
+            <p>El precio de referencia se encuentra en dólares, pero el <strong>pago es realizado en la moneda de tu país</strong>.</p>
+            <p>Da clic en el siguiente botón para conocer el valor en la <strong>moneda de tu país</strong> y reservar tu libro 👇</p>
+
+            <a href="https://pay.hotmart.com/Y96597496J?checkoutMode=10" class="cta-button" style="margin: 30px 0;">
+                DESCARGAR AHORA
+            </a>
+
+            <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/688a6ff0c8c7e_Compra-Segura-2.png" alt="Compra Segura" style="max-width: 400px; width: 100%; margin: 20px auto;">
+
+            <div class="timer" style="margin: 30px 0;">
+                <span style="color: #ff0000;">La Oferta Finaliza En:</span><br>
+                <span id="countdown2">23:59:45</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="faq-header">
+                <h2 style="color: #000; font-size: 2rem; font-weight: 600; font-style: italic;">PREGUNTAS FRECUENTES</h2>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    ¿Necesito tener experiencia previa en joyería artesanal para usar este libro?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>No.</strong> El libro está diseñado para principiantes. Aprenderás desde cero con explicaciones claras, imágenes, y videos paso a paso para que puedas dominar las técnicas sin complicaciones.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    ¿Cuánto tiempo tengo acceso al contenido?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    <strong>Acceso de por vida.</strong> Una vez descargues el material, es tuyo para siempre. Podrás consultarlo cuantas veces quieras, sin límite de tiempo.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    ¿Qué incluye exactamente la compra?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Recibirás el <strong>ebook completo con las 4 técnicas de joyería artesanal</strong> (peyote par, peyote impar, puntada cuadrada y puntada ladrillo), <strong>videos explicativos</strong> y <strong>6 bonos adicionales</strong>, incluyendo patrones, plantillas, programas de diseño, lista de proveedores, y más.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    ¿Cómo recibiré el material después de comprar?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Al realizar el pago, recibirás automáticamente un correo electrónico con los enlaces de descarga del ebook y los bonos. Puedes guardarlos en tu celular, tablet o computadora.
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                    ¿Puedo acceder desde cualquier país?
+                    <span>+</span>
+                </div>
+                <div class="faq-answer">
+                    Sí, el producto es 100% digital y puede ser adquirido desde cualquier parte del mundo. Solo necesitas conexión a internet para descargarlo.
+                </div>
+            </div>
+        </div>
+    </section>
+
+   <!-- Guarantee Section -->
+<section class="guarantee-section" style="padding:40px 20px; text-align:center;">
+  <div class="container" style="max-width:900px; margin:0 auto;">
+
+    <!-- Badge Garantía -->
+    <img src="https://d1yei2z3i6k35z.cloudfront.net/13729843/68894e5f3c641_Selo_de_Garantia_de_7_Dias_PNG_Transparente_Sem_Fundo.png" 
+         alt="Garantía 7 días" 
+         class="guarantee-badge" 
+         style="max-width:220px; width:100%; height:auto; margin:0 auto 20px; display:block;">
+
+    <!-- Título -->
+    <h2 style="color:#cf9d01; font-size:2rem; margin-bottom:20px;">
+      <strong>Garantía de satisfacción</strong>
+    </h2>
+
+    <!-- Texto -->
+    <div class="guarantee-text" style="font-size:1rem; line-height:1.6; color:#fffef0; margin-bottom:30px;">
+      <p>
+        Si en los primeros 7 días el libro no cumple con tus expectativas, te reembolsaremos el 100% de tu dinero sin realizar ningún tipo de pregunta. 
+        De esta manera, no asumes ningún riesgo y te aseguras de haber realizado una excelente inversión.
+      </p>
+    </div>
+
+   <!-- How to Access Section -->
+<section class="steps-section">
+  <div class="container">
+
+    <!-- Título -->
+    <h2 class="steps-title">
+      <strong>¿Cómo acceder a tu compra en solo 3 pasos?</strong>
+    </h2>
+
+    <!-- Pasos -->
+    <div class="steps-grid">
+
+      <!-- Paso 1 -->
+      <div class="step-card">
+        <div class="step-icon">🔒</div>
+        <h3>Paga con total seguridad</h3>
+        <p>
+          Tarjeta de crédito, <strong>Apple Pay</strong> o <strong>PayPal</strong>.  
+          Compra 100% protegida y sin complicaciones.
+        </p>
+      </div>
+
+      <!-- Paso 2 -->
+      <div class="step-card">
+        <div class="step-icon">⚡</div>
+        <h3>Acceso inmediato</h3>
+        <p>
+          Recibirás en tu correo el <strong>ebook + videoclases</strong> al instante.  
+          Incluso si eres principiante, todo explicado paso a paso.
+        </p>
+      </div>
+
+      <!-- Paso 3 -->
+      <div class="step-card">
+        <div class="step-icon">🌟</div>
+        <h3>Empieza hoy, a tu ritmo</h3>
+        <p>
+          Descarga el patrón inicial y sigue la guía.  
+          <strong>Garantía de 7 días</strong> si no estás satisfecha.
+        </p>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="cta-wrapper">
+      <a href="https://pay.kiwify.com/IuGPrBz" class="cta-button">
+        Acceder ahora con 70% de descuento
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<style>
+/* Fundo da seção */
+.steps-section {
+  background: #0F1819;
+  padding: 60px 20px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Container */
+.steps-section .container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* Título */
+.steps-title {
+  color: #CF9D01;
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+
+/* Grid */
+.steps-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Cards */
+.step-card {
+  flex: 1;
+  min-width: 260px;
+  background: #fff;
+  border-radius: 15px;
+  padding: 25px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.25);
+  opacity: 0;
+  transform: translateY(30px);
+  animation: cardFadeUp 0.8s ease forwards;
+}
+
+.step-card:nth-child(1) { animation-delay: 0.3s; }
+.step-card:nth-child(2) { animation-delay: 0.6s; }
+.step-card:nth-child(3) { animation-delay: 0.9s; }
+
+.step-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.step-card h3 {
+  color: #009bc1;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.step-card p {
+  color: #333;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* CTA */
+.cta-wrapper {
+  margin-top: 50px;
+}
+
+.cta-button {
+  background: #ff4b01;
+  color: white;
+  padding: 18px 40px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+  transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.4);
+}
+
+/* Animação */
+@keyframes cardFadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .steps-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+</style>
+
+
+<!-- Animación hover -->
+<style>
+  .solution-section div[style*="box-shadow"]:hover {
+    transform: translateY(-8px);
+  }
+
+  /* Footer */
+  .footer {
+    background: #0F1819;
+    padding: 40px 20px 25px;
+    text-align: center;
+    color: #fffef0;
+    font-family: 'Montserrat', sans-serif;
+  }
+
+  .footer p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+    line-height: 1.6;
+  }
+
+  .footer strong {
+    color: #CF9D01; /* dourado para destaque */
+  }
+
+  .footer .legal {
+    font-size: 0.8rem;
+    color: #bbb;
+    margin-top: 15px;
+    line-height: 1.4;
+  }
+</style>
+
+<!-- Footer -->
+<section class="footer">
+  <div class="container">
+    <p><strong>© 2025 Todos los Derechos Reservados al Ecosistema María Alejandra Artesanales.</strong></p>
+    <p class="legal">
+      Este sitio no forma parte del sitio web de Facebook ni de Facebook Inc. 
+      Además, este sitio NO está avalado por Facebook de ninguna manera. 
+      FACEBOOK es una marca registrada de FACEBOOK, Inc.
+    </p>
+  </div>
+</section>
+
+<script>
+    // Countdown Timer
+    function updateCountdown() {
+        const countdownElements = document.querySelectorAll('[id^="countdown"]');
+        
+        // Set countdown to 24 hours from now
+        const now = new Date().getTime();
+        const endTime = now + (24 * 60 * 60 * 1000); // 24 hours
+        
+        const timer = setInterval(function() {
+            const now = new Date().getTime();
+            const distance = endTime - now;
+            
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+            const timeString = 
+                (hours < 10 ? "0" + hours : hours) + ":" +
+                (minutes < 10 ? "0" + minutes : minutes) + ":" +
+                (seconds < 10 ? "0" + seconds : seconds);
+            
+            countdownElements.forEach(element => {
+                if(element) element.innerHTML = timeString;
+            });
+            
+            if (distance < 0) {
+                clearInterval(timer);
+                countdownElements.forEach(element => {
+                    if(element) element.innerHTML = "00:00:00";
+                });
+            }
+        }, 1000);
+    }
+
+    // FAQ Toggle
+    function toggleFaq(element) {
+        const answer = element.nextElementSibling;
+        const icon = element.querySelector('span');
+        
+        if (answer.classList.contains('active')) {
+            answer.classList.remove('active');
+            icon.innerHTML = '+';
+        } else {
+            // Close all other FAQs
+            document.querySelectorAll('.faq-answer').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.faq-question span').forEach(item => {
+                item.innerHTML = '+';
+            });
+            
+            // Open clicked FAQ
+            answer.classList.add('active');
+            icon.innerHTML = '-';
+        }
+    }
+
+    // Initialize countdown when page loads
+    document.addEventListener('DOMContentLoaded', function() {
+        updateCountdown();
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+                behavior: 'smooth'
+            });
+        });
+    });
+</script>
+</body>
+</html>
